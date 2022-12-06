@@ -26,15 +26,19 @@ SOFTWARE. */
 /* Calling function */
 var getStyle, getComputedStyle;
 
-var URI = [];	/* using array object which is using html dom, <span> as a formatter? */
-
 function selectorElement() {
 	this.find('*').each(function (index) {
 
 		const selectBefore =  getComputedStyle(element, ':before');
+		const pathname = location.attr('pathname').lastIndexOf('/');	/* return 'pathname' page */
+		const pathURL = location.attr('protocol') + '://' + location.attr('hostname') + pathname; /* clipboard your 'protocol' string '://' in addition to get 'protocol://' add IP hostname or domain to bring 'protocol://domain' add again pathname to get 'protocol://domain.com/pathname' */
 
-			if (selectBefore.getPropertyValue('content').length > 0 && selectBefore.getPropertyValue('content') != null) {	/* selectBefore
-				
+			if (selectBefore.getPropertyValue('content').length > 0 && selectBefore.getPropertyValue('content') != null) {	/* selectBefore */
+				const selector.str = selectBefore.getPropertyValue('content').split('"');
+				const this.image = false;
+				const processed = false;
+				const span.before = '<span>';
+				const this.style = mainArrays.getStyle(element
 
 var selector = getComputedStyle(element, ':after');	/* marshmellow and pseudomagic fuckit */
 	const selector.str = selector.getPropertyValue('content').split('"');	/* S */
@@ -62,6 +66,8 @@ var selector = getComputedStyle(element, ':after');	/* marshmellow and pseudomag
 										
 										mainArrays.getComputedFontStyle(element, span.after[0], this.style, attr.BsWrapper.attributes, ':after');	/* ....... */
 									}
+
+function get
 
 function getStyle(element, attributes, pseudo?) {
 	var spanDefault = [];
