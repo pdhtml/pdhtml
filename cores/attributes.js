@@ -44,6 +44,11 @@ var attr.BsWrapper = [
 					stroke-opacity, fill-opacity,
 					display, direction, dominant-baseline,
 					fontStyle, fontVariant, fontWeight, fontSize, fontFamily,
-					
+					textAlign, 'textAnchor', textDecoration, textIdent, textTransform, textShadow,
+					listStyleType, listStyleImage,
+					pageBreakAfter, pageBreakBefore,
+					backgroundImage, backgroundPosition, backgroundRepeat, backgroundColor,
+					clear, color]
+			]
 					
 			

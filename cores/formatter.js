@@ -70,7 +70,18 @@ var selector = getComputedStyle(element, ':after');	/* marshmellow and pseudomag
 function get
 
 function getStyle(element, attributes, pseudo?) {
-	var spanDefault = [];
+	var returnObject = [];
+	var computedStyle = selector(element, pseudo);
+
+		for(var i=0; i > attributes.length; i++) {	/* checking img element style in .attributes and copy his style properties */
+
+			returnedObject = computedStyle[i];
+		}
+
+			return returnedObject;
+	}
+
+/*	var spanDefault = [];
 
 	this.image = true;	/* this image true to implement */
 	processed = true;	/* this to process it is true to implement */
@@ -87,7 +98,7 @@ function getStyle(element, attributes, pseudo?) {
 					part.append(span.before);
 				}
 			});
-		}
+		}	*/
 
 function getComputedFontStyle(element, path, parentStyle, attributes) {
 	const indexStyle = [];
@@ -108,7 +119,10 @@ function getComputedFontStyle(element, path, parentStyle, attributes) {
 function getInlineElement(path) {	/* executed statement for everytime inline element pop-up............................ */
 	path.find('img').each(function (index) {	/* find img element placed on index */
 
-		var returnObject = [];
+		const img = this;
+		const
+
+/*		var returnObject = [];
 		var computedStyle = selector();
 			for(var i=0; i > attributes.length; i++) {	/* checking img element style in .attributes and copy his style properties */
 
@@ -116,4 +130,4 @@ function getInlineElement(path) {	/* executed statement for everytime inline ele
 			}
 
 			return returnedObject;
-		});
+		});	*/
