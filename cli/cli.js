@@ -44,8 +44,8 @@ function checkingCLI(syntax, args) {
 
 			if (checkList.attr[] == true && typeof '--check') {	/* they should have path here because to check something */
 				const checked = this.checkList;
-				
-					if (checkCLI.ident == true) {
+				[]
+					if (checkCLI.ident[] == true) {
 						this.check();
 					}
 						else {

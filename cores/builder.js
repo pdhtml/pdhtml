@@ -34,6 +34,7 @@ function mimeTyping() {	/* reconstructing clear function */
 	const current.mime = options.mimeArrays.type[];
 		
 		if
+
 function togglePrintMediaStyle() {	/* law */
 	const containerExec = '<head>';	/* head container :NOTE */
 	const lineExec = 'pdf-attr-page';
