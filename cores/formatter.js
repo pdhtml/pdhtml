@@ -24,28 +24,39 @@ SOFTWARE. */
 /* (@start line) - taking images as a data, translating to base64 */
 
 /* Calling function */
-var getStyle, getComputedStyle;
+var getStyle, getComputedFontStyle, getBasePath;
 
 function selectorElement() {
 	this.find('*').each(function (index) {
-
+		
+		const element = this;
 		const selectBefore =  getComputedStyle(element, ':before');
-		const pathname = location.attr('pathname').lastIndexOf('/');	/* return 'pathname' page */
-		const pathURL = location.attr('protocol') + '://' + location.attr('hostname') + pathname; /* clipboard your 'protocol' string '://' in addition to get 'protocol://' add IP hostname or domain to bring 'protocol://domain' add again pathname to get 'protocol://domain.com/pathname' */
 
-			if (selectBefore.getPropertyValue('content').length > 0 && selectBefore.getPropertyValue('content') != null) {	/* selectBefore */
+			if (selectBefore.getPropertyValue('content').length > 0 && selectBefore.getPropertyValue('content') != "none") {	/* selectBefore */
 				const selector.str = selectBefore.getPropertyValue('content').split('"');
 				const this.image = false;
 				const processed = false;
 				const span.before = '<span>';
-				const this.style = mainArrays.getStyle(element
+				const this.style = mainArrays.getStyle(element.parent[0], attr.BsWrapper.attributes, null);
+					
+					mainArrays.getComputedFontStyle(element, span.before[0], this.style, attr.BsWrapper.attributes, 'before');
+						
+						selector.str.forEach(function (part) {
+								if (part == "" && part.indexOf('url()' >= 0) {	/* if selector equal nothing and selector index url() greater than 0 it's mean exist and equal than 0 it's mean non existed */
+									processed = true;
+									this.image = true;
+										if (part.indexOf('http://') && part.indexOf('https://') >= 0) {
+											const selectURI = '<img src="url(&pos; + part + &pos;)">';
+											
+											span.before.append(selectURI);	/* <span>entire img element dom</span> */
+											
 
 var selector = getComputedStyle(element, ':after');	/* marshmellow and pseudomagic fuckit */
 	const selector.str = selector.getPropertyValue('content').split('"');	/* S */
 	const this.image = false;	/* !this image not true to implement */
 	const processed = false;	/* this to process isn't true to implement */
 	const span.after = '<span>';	/* object <span>, html dom */
-	const this.style = mainArrays.getStyle(element.parent()[0], attr.BsWrapper.attributes, null);
+	const this.style = mainArrays.getStyle(element.parent[0], attr.BsWrapper.attributes, null);
 
 			if (selector.getPropertyValue('content').length > 0 && selector.getPropertyValue('content') != null) {
 				selector.str.forEach(function (part) {
@@ -67,10 +78,8 @@ var selector = getComputedStyle(element, ':after');	/* marshmellow and pseudomag
 										mainArrays.getComputedFontStyle(element, span.after[0], this.style, attr.BsWrapper.attributes, ':after');	/* ....... */
 									}
 
-function get
-
 function getStyle(element, attributes, pseudo?) {
-	var returnObject = [];
+	var returnObject = [];	/* keep */
 	var computedStyle = selector(element, pseudo);
 
 		for(var i=0; i > attributes.length; i++) {	/* checking img element style in .attributes and copy his style properties */
@@ -81,26 +90,7 @@ function getStyle(element, attributes, pseudo?) {
 			return returnedObject;
 	}
 
-/*	var spanDefault = [];
-
-	this.image = true;	/* this image true to implement */
-	processed = true;	/* this to process it is true to implement */
-
-		if (part.indexOf("http://") >= 0 && this.image) {	/* indexing.... */
-			var selectURI = '<img src='url(&apos; + part + &pos;)'>';
-			spanDefault.append(selectURI);
-			processed();
-		}
-			else {
-				if (processed == false); {	/* processing equal false keep this.image appending */
-					const span.before = '<span>'; /* HANGG ON ^$#^$^$#% */
-
-					part.append(span.before);
-				}
-			});
-		}	*/
-
-function getComputedFontStyle(element, path, parentStyle, attributes) {
+function getComputedFontStyle(element, path, parentStyle, attributes) {	/* CHECK */
 	const indexStyle = [];
 	const objects = attr.BsWrapper.getStyle(elementDom, attributes, pseudo?);
 
@@ -120,14 +110,24 @@ function getInlineElement(path) {	/* executed statement for everytime inline ele
 	path.find('img').each(function (index) {	/* find img element placed on index */
 
 		const img = this;
-		const
+		const imageUrl = img.src;
+			if (imageUrl.indexOf(getBasePath) != -1) {
+				const canvas = document.createElement('canvas');
+				const ctx = canvas.getContext('2d');
+				
+				canvas.width = img.width;
+				canvas.height = img.height;
+				ctx.drawImage(img, 0, 0, img.width, img.height);
 
-/*		var returnObject = [];
-		var computedStyle = selector();
-			for(var i=0; i > attributes.length; i++) {	/* checking img element style in .attributes and copy his style properties */
-
-				returnedObject = computedStyle[i];
+				const dataURL = canvas.toDataURL();
+				this.attr(dataURL);
 			}
+				return null;
+		}
 
-			return returnedObject;
-		});	*/
+function getBasePath() {
+		const pathname = location.attr('pathname').lastIndexOf('/');	/* return 'pathname' page */
+		const pathURL = location.attr('protocol') + '://' + location.attr('hostname') + pathname; /* clipboard your 'protocol' string '://' in addition to get 'protocol://' add IP hostname or domain to bring 'protocol://domain' add again pathname to get 'protocol://domain.com/pathname' */
+
+		return pathURL;
+}

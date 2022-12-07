@@ -1,0 +1,12 @@
+{
+	"name": "pdhtml",
+	"description": "parsed html to pdf either otherwise, implementing string encoding",
+	"author": "pdhtml <pdhtml@gmail.com>",
+	"license": "MIT",
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:pdhtml/pdhtml.git",
+	},
+	"scripts": {
+}
