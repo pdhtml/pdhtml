@@ -36,7 +36,7 @@ SOFTWARE. */
 - developer
 */
 
-import {};
+import {}; */ enum */
 
 function checkingCLI(syntax, args) {
 		const checkCli = '';
@@ -44,12 +44,13 @@ function checkingCLI(syntax, args) {
 
 			if (checkList.attr[] == true && typeof '--check') {	/* they should have path here because to check something */
 				const checked = this.checkList;
-				[]
-					if (checkCLI.ident[] == true) {
-						this.check();
-					}
-						else {
-							if (checkList.attr[] == false && typeof '--uncheck') {
-								const repeatAction = '';
-				
-				console.log( 
+					for (i = 0, checkSum = syntax.attr, i++) {	/* they strategy here to take data from builder encrypted to read it data and check his builded metaData */
+						this.sum[i] = new .parse();	/* parsed back to string */
+						checkedFunct(this.sum[])
+
+						if (checkCLI.ident[] == true) {
+							this.check();
+						}
+							else {
+								if (checkList.attr[] == false && typeof '--uncheck') {
+									const repeatAction = ''; 

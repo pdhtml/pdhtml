@@ -25,11 +25,13 @@ SOFTWARE. */
 
 /* Calling function */
 var getStyle, getComputedFontStyle, getBasePath;
+var selectorElement;
 
 function selectorElement() {
 	this.find('*').each(function (index) {
 		
 		const element = this;
+		const selectAfter = getComputedStyle(element, ':after');
 		const selectBefore =  getComputedStyle(element, ':before');
 
 			if (selectBefore.getPropertyValue('content').length > 0 && selectBefore.getPropertyValue('content') != "none") {	/* selectBefore */
@@ -49,30 +51,24 @@ function selectorElement() {
 											const selectURI = '<img src="url(&pos; + part + &pos;)">';
 											
 											span.before.append(selectURI);	/* <span>entire img element dom</span> */
-											
 
-var selector = getComputedStyle(element, ':after');	/* marshmellow and pseudomagic fuckit */
-	const selector.str = selector.getPropertyValue('content').split('"');	/* S */
-	const this.image = false;	/* !this image not true to implement */
-	const processed = false;	/* this to process isn't true to implement */
-	const span.after = '<span>';	/* object <span>, html dom */
-	const this.style = mainArrays.getStyle(element.parent[0], attr.BsWrapper.attributes, null);
+				const this.style = mainArrays.getStyle();	/* NOTE: I GOT CONFUSED WITH MY OWN CODE */
 
-			if (selector.getPropertyValue('content').length > 0 && selector.getPropertyValue('content') != null) {
-				selector.str.forEach(function (part) {
-					if (part == "");
-						process = false;
-							if (part.indexOf("url()") >= 0) {	/* return "url()" string greater or equal than 0 */
-								processed = true;
-									if (part.indexOf("http://") >= 0 && this.image == true) {	/* return "http://" string greater or equal than 0 and this.image equal true	*/
-										const selectURI = '<img src="url(&pos; + part + &pos;)">';
-
-										span.after.append(selectURI);
+					if (selector.getPropertyValue('content').length > 0 && selector.getPropertyValue('content') != null) {
+						selector.str.forEach(function (part) {
+							if (part == "");
+								process = false;
+									if (part.indexOf("url()") >= 0) {	/* return "url()" string greater or equal than 0 */
 										processed = true;
-											if (processed) {
-												const span.after = '<span>';	/* HANGG ON ^$#^$^$#% */
+											if (part.indexOf("http://") >= 0 && this.image == true) {	/* return "http://" string greater or equal than 0 and this.image equal true	*/
+												const selectURI = '<img src="url(&pos; + part + &pos;)">';
+
+												span.after.append(selectURI);
+												processed = true;
+													if (processed) {
+														const span.after = '<span>';	/* HANGG ON ^$#^$^$#% */
 												
-												part.append(span.after);	/* implement <span>url()</span> */
+														s.append(span.after);	/* implement <span>url()</span> */
 											});
 										
 										mainArrays.getComputedFontStyle(element, span.after[0], this.style, attr.BsWrapper.attributes, ':after');	/* ....... */

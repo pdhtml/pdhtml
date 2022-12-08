@@ -30,11 +30,6 @@ current.mimeType = "application/pdf";
 var options = [];
 var togglePrintMediaStyle;
 
-function mimeTyping() {	/* reconstructing clear function */
-	const current.mime = options.mimeArrays.type[];
-		
-		if
-
 function togglePrintMediaStyle() {	/* law */
 	const containerExec = '<head>';	/* head container :NOTE */
 	const lineExec = 'pdf-attr-page';
@@ -48,3 +43,6 @@ function clear() {
 		return removeAttr;
 		mainArrays.togglePrintMediaStyle();
 }
+
+/* LET'S NOTE THESE ONE I THINK THIS IS A BUNCH CALL, CALL, IMPLEMENT BASED SYNTAX */
+elementID.after(
