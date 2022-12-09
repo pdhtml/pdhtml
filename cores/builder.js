@@ -34,15 +34,29 @@ function togglePrintMediaStyle() {	/* law */
 	const containerExec = '<head>';	/* head container :NOTE */
 	const lineExec = 'pdf-attr-page';
 
-		if (lineExec
+		if (lineExec.length > 0) {
+			getLineExec = new lineExec.remove();
 
+			return lineExec;
+		}
+
+	const printRules = [];
+	const boolean = false;
+
+		for (i=0; i < document.styleSheets.length; i++) {
+			var document.styled = document.styleSheets();
+
+				for (x=0; x < mediaArrays.length; x++) {
+					if (document.styled[i].href || document.styled[i].href.indexOf(arr) > 0) {	/* if url document have stylesheet on it placed in x and 
+						skipLine = new Boolean(true);
+						break;	*/ aaaa what is this again some master style coding configured later */
 function clear() {
-	if (mainArrays.container).length == 0 || mainArrays.container.attr('pdf-attr-break') == 'true') {
-		removeAttr = new mainArrays.container.remove();
+	if (mainArrays.container).length == 0 || mainArrays.container.attr('pdf-attr-break') == 'true') {	/* NOTE */
+		removeAttr = new mainArrays.container.remove();	/* .container uplugged in mainArrays */
 	}
 		return removeAttr;
 		mainArrays.togglePrintMediaStyle();
 }
 
 /* LET'S NOTE THESE ONE I THINK THIS IS A BUNCH CALL, CALL, IMPLEMENT BASED SYNTAX */
-elementID.after(
+elementID.after(main

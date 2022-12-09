@@ -27,7 +27,7 @@ SOFTWARE. */
 var getStyle, getComputedFontStyle, getBasePath;
 var selectorElement;
 
-function selectorElement() {
+function selectorElement() {	/* NOTE: not so sure with my algo, it would be corrected in the end */
 	this.find('*').each(function (index) {
 		
 		const element = this;
@@ -38,47 +38,47 @@ function selectorElement() {
 				const selector.str = selectBefore.getPropertyValue('content').split('"');
 				const this.image = false;
 				const processed = false;
-				const span.before = '<span>';
+				const span.element = '<span>';
 				const this.style = mainArrays.getStyle(element.parent[0], attr.BsWrapper.attributes, null);
 					
 					mainArrays.getComputedFontStyle(element, span.before[0], this.style, attr.BsWrapper.attributes, 'before');
 						
 						selector.str.forEach(function (part) {
-								if (part == "" && part.indexOf('url()' >= 0) {	/* if selector equal nothing and selector index url() greater than 0 it's mean exist and equal than 0 it's mean non existed */
+								if (part == "" || part.indexOf('url()') >= 0) {	/* if selector equal nothing and selector index url() greater than 0 it's mean exist and equal than 0 it's mean non existed */
 									processed = true;
 									this.image = true;
-										if (part.indexOf('http://') && part.indexOf('https://') >= 0) {
+										if (part.indexOf('http://') || part.indexOf('https://') >= 0) {
 											const selectURI = '<img src="url(&pos; + part + &pos;)">';
 											
-											span.before.append(selectURI);	/* <span>entire img element dom</span> */
-
-				const this.style = mainArrays.getStyle();	/* NOTE: I GOT CONFUSED WITH MY OWN CODE */
-
-					if (selector.getPropertyValue('content').length > 0 && selector.getPropertyValue('content') != null) {
-						selector.str.forEach(function (part) {
-							if (part == "");
-								process = false;
-									if (part.indexOf("url()") >= 0) {	/* return "url()" string greater or equal than 0 */
-										processed = true;
-											if (part.indexOf("http://") >= 0 && this.image == true) {	/* return "http://" string greater or equal than 0 and this.image equal true	*/
-												const selectURI = '<img src="url(&pos; + part + &pos;)">';
-
-												span.after.append(selectURI);
-												processed = true;
-													if (processed) {
-														const span.after = '<span>';	/* HANGG ON ^$#^$^$#% */
-												
-														s.append(span.after);	/* implement <span>url()</span> */
-											});
-										
-										mainArrays.getComputedFontStyle(element, span.after[0], this.style, attr.BsWrapper.attributes, ':after');	/* ....... */
+											span.element.append(selectURI);	/* <span>entire img element dom</span> */
+										}
 									}
+								}
+					} else
+
+			if (selectAfter.getPropertyValue('content.length > 0 && selectAfter.getPropertyValue('content') != "none") {	/* selectAfter */
+				const this.style = mainArrays.getStyle(element.parent[0], attr.BsWrapper.attributes, null);
+							
+					mainArrays.getComputedFontStyle(element, span.element[0], this.style, attr.BsWrapper.attributes, 'after');
+
+						selector.str.forEach(function (part) {
+							if (part == "" || part.indexOf('url()') >= 0) {
+								processed = true;
+								this.image = true;
+									if (part.indexOf('http://') || part.index.Of('https://') >= 0) {
+										const selectURI = '<img src="url(&pos; + part + &pos;)">';
+
+										span.element.append(selectURI);
+									}
+								}
+							}
+						}
 
 function getStyle(element, attributes, pseudo?) {
 	var returnObject = [];	/* keep */
 	var computedStyle = selector(element, pseudo);
 
-		for(var i=0; i > attributes.length; i++) {	/* checking img element style in .attributes and copy his style properties */
+		for(i=0; i > attributes.length; i++) {	/* checking img element style in .attributes and copy his style properties */
 
 			returnedObject = computedStyle[i];
 		}
