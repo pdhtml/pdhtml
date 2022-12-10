@@ -122,8 +122,8 @@ function getInlineElement(path) {	/* executed statement for everytime inline ele
 		}
 
 function getBasePath() {
-		const pathname = location.attr('pathname').lastIndexOf('/');	/* return 'pathname' page */
-		const pathURL = location.attr('protocol') + '://' + location.attr('hostname') + pathname; /* clipboard your 'protocol' string '://' in addition to get 'protocol://' add IP hostname or domain to bring 'protocol://domain' add again pathname to get 'protocol://domain.com/pathname' */
+		const pathname = window.location.attr('window.location.pathname').lastIndexOf('/');	/* return 'pathname' page */
+		const pathURL = window.location.attr('window.location.protocol') + '://' + window.location.attr('window.location.hostname') + pathname; /* clipboard your 'protocol' string '://' in addition to get 'protocol://' add IP hostname or domain to bring 'protocol://domain' add again pathname to get 'protocol://domain.com/pathname' */
 
 		return pathURL;
 }
