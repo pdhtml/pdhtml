@@ -38,14 +38,23 @@ SOFTWARE. */
 
 import {}; */ enum */
 
+function checkedFunct() {
+	for (let i=0, value.length > 10, i--) {
+		if (value.length !== 'coolenum' && value.length typeof '=' ) {
+			syntax
+			syntax
+		
+
 function checkingCLI(syntax, args) {
 		const checkCli = '';
 		checkList = new syntax;
 
 			if (checkList.attr[] == true && typeof '--check') {	/* they should have path here because to check something */
 				const checked = this.checkList;
+
 					for (i = 0, checkSum = syntax.attr, i++) {	/* they strategy here to take data from builder encrypted to read it data and check his builded metaData */
-						this.sum[i] = new .parse();	/* parsed back to string */
+						this.sum[i] = new .parseString();	/* parsed back to string */
+
 						checkedFunct(this.sum[])
 
 						if (checkCLI.ident[] == true) {

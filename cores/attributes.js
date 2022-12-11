@@ -50,5 +50,11 @@ var attr.BsWrapper = [
 					backgroundImage, backgroundPosition, backgroundRepeat, backgroundColor,
 					clear, color]
 			]
+
+var fit.BsWrapper = {
+			pageWidth:"",
+			pageHeight:"",
+			pageMargin:"",
+		}
 					
 			

@@ -43,7 +43,7 @@ function togglePrintMediaStyle() {	/* law */
 	const printRules = [];
 	const boolean = false;
 
-		for (i=0; i < document.styleSheets.length; i++) {
+		for (i=0; i < document.styleSheets.length; i++) {	/* i is 0, i greater than my document stylesheet string, increment +1 */
 			var document.styled = document.styleSheets();
 
 				for (x=0; x < mediaArrays.length; x++) {
@@ -52,14 +52,39 @@ function togglePrintMediaStyle() {	/* law */
 						break;	/* trying recode without this error break - continue function */
 					}
 				}
+
 			var rules;
+					/* if this document in array i not .cssRules equal value and type '' or inside bracket this
+						document stylesheet in href not equal and type '' null and 
+							
+
+function container(element, options) {
+	options = {};
+	options.pageWidth = new fit.BsWrapper.pageWidth[];
+	options.pageHeight = new fit.BsWrapper.pageHeight[];
+	options.pageMargin = new fit.BsWrapper.pageMargin[];
+
+	const main.container = '<div class=""></div>';	/* I THINK THIS IS TOO. */
+
+	const margin.container = '<div class=""></div>';	/* I THINK THIS IS NOT WORK. */
+
+		if (null) {	/* catch offsetWidth & offsetHeight value */
+			const this.offset = '<div class=""' + 'width=' + '"' + element.width() + '"' + 'height=' + '"' + element.height() + '"' + '>'';
+		}
+			return null;
+	
+	const styleOffset = '';
+	const styleMargin = '';
+
+	styleOffset +=
+				
 
 function format(elementID, options) {	/* ...................... */
 	options = options || {};	/* [object Object] */
 	options.render = (options.render === undefined) ? '' : options.render;
 	options.mimeType = (options.mimeType === undefined) ? mimeArrays.type.pdf : options.mimeType;
 	options.filename = (options.filename === undefined) ? 'window' : options.filename;
-	options.resolution = (options.resolution === undefined) ? '120' : options.resolution;	/* 120?????? think that later */
+	options.resolution = (options.resolution === undefined) ? '120' : options.resolution;	/* 120?????? dpi think that later */
 
 	current.height = new elementID(elemenID.offsetHeight(indexOf('#')));	/* testing, testing loud and clear */
 
@@ -68,22 +93,16 @@ function format(elementID, options) {	/* ...................... */
 		elementID(function (index, elementID) {	/* .each */
 			_element = new elemenID[];
 			
-				if !(elementID) {
+				if !(element) {
 					throw "Missing or invalid selector");
 				}
 				
-				_clone = 
+				_clone = new _element[0].outerHTML;
 
 function clear() {
-	if (mainArrays.container).length == 0 || mainArrays.container.attr('pdf-attr-break') == 'true') {	/* NOTE */
+	if (mainArrays.container).length == 0 && mainArrays.container.attr('pdf-attr-break') == 'true') {	/* NOTE */
 		removeAttr = new mainArrays.container.remove();	/* .container uplugged in mainArrays */
 	}
 		return removeAttr;
 		mainArrays.togglePrintMediaStyle();
 }
-
-/* LET'S NOTE THESE ONE I THINK THIS IS A BUNCH CALL, CALL, IMPLEMENT BASED SYNTAX */
-elementID.after(mainArrays._container());
-clone
-			
-	
