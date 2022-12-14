@@ -55,7 +55,21 @@ function togglePrintMediaStyle() {	/* law */
 
 			var rules;
 					/* if this document in array i not .cssRules equal value and type '' or inside bracket this
-						document stylesheet in href not equal and type '' null and 
+						document stylesheet in href not equal and type '' null and document stylesheet in
+							array i as a host, indexed ????  -- document version*/
+				try {
+					if (document.styleSheets[i].cssRules !== null || document.styleSheets[i].href && document.styleSheets[i].indexOf(href(window.location.host) !== null) {
+						skipLine();
+					}
+						if (skipLine) continue { const rules = document.styleSheets[i].cssRules }
+				} catch(e) {}
+
+				if(rules) {
+					var arr = [];
+					
+						for (let o = 0; o < rules.length; o++) {	/* let o equal 0, o smaller than rules.length; increment +1 */
+							/* 
+							
 							
 
 function container(element, options) {
@@ -76,7 +90,11 @@ function container(element, options) {
 	const styleOffset = '';
 	const styleMargin = '';
 
-	styleOffset +=
+	styleOffset += 'width:' + options.pageWidth;
+	styleOffset += 'height' + options.pageHeight;
+	styleMargin += 'margin:' + options.pageMargin;
+
+		if (options && options.p	/* if options and options.pageMarginTop add margin-top with value */
 				
 
 function format(elementID, options) {	/* ...................... */
@@ -90,14 +108,16 @@ function format(elementID, options) {	/* ...................... */
 
 	const printCopy = '';
 
-		elementID(function (index, elementID) {	/* .each */
-			_element = new elemenID[];
+		elementID(function (index, element) {	/* .each */
+			mainArrays.element = new elemen[];
 			
 				if !(element) {
 					throw "Missing or invalid selector");
 				}
 				
-				_clone = new _element[0].outerHTML;
+				mainArray.clone = new mainArray.element[0].outerHTML;	*/ outerHTML */
+				mainArray.container = new mainArray.container(element, options);
+				
 
 function clear() {
 	if (mainArrays.container).length == 0 && mainArrays.container.attr('pdf-attr-break') == 'true') {	/* NOTE */

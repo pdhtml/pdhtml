@@ -24,7 +24,7 @@ SOFTWARE. */
 /* Calling function */
 var utf8EncodeBuffer, utf8EncodeBinaryString, binaryStringEncodeBuffer;
 
-/* Code to encode bufferToBinarystring to ....
+/* Code to encode bufferToBinarystring to ....	*/
 function bufferEncodeBinary(buffer, path) {
 	const char = utf8EncodeBuffer();
 	const binary = Array.prototype.map.call(buffer, function (char) {	/*
@@ -35,7 +35,7 @@ function bufferEncodeBinary(buffer, path) {
 	return binary;
 }
 
-/* Code to encode utf8EncodeBuffer to .... using ....
+/* Code to encode utf8EncodeBuffer to .... using .... */
 function utf8EncodeBuffer(str) {
 	const binaryString = utf8EncodeBinaryString(utf8Str);
 	const buffer = binaryStringEncodeBuffer(binaryStr);
@@ -43,12 +43,12 @@ function utf8EncodeBuffer(str) {
 	return buffer;
 }
 
-/* Code to encode utf8EncodeBinaryString to .... using ....
+/* Code to encode utf8EncodeBinaryString to .... using .... */
 var reGex = '';
 
 function utf8EncodeBinaryString(utf8Str) {
 	const escString = encodeURIComponent(uriString);
-	const binaryEsc = escString.replace(reGex, function (escString) {
+	const binaryEsc = escString.replace(reGex, function (escString) {	*/ replacing specific string with regex */
 
 		return String.fromCharCode('0x');
 	});
@@ -56,7 +56,7 @@ function utf8EncodeBinaryString(utf8Str) {
 	return binaryEsc;
 }
 
-/* Code to encode binaryStringEncodeBuffer to .... using ....
+/* Code to encode binaryStringEncodeBuffer to .... using .... */
 function binaryStringEncodeBuffer(binaryStr) {
 	var binaryString ;
 	

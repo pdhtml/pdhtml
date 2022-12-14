@@ -56,7 +56,7 @@ function selectorElement() {	/* NOTE: not so sure with my algo, it would be corr
 								}
 					} else
 
-			if (selectAfter.getPropertyValue('content.length > 0 && selectAfter.getPropertyValue('content') != "none") {	/* selectAfter */
+			if (selectAfter.getPropertyValue('content.length') > 0 && selectAfter.getPropertyValue('content') != "none") {	/* selectAfter */
 				const this.style = mainArrays.getStyle(element.parent[0], attr.BsWrapper.attributes, null);
 							
 					mainArrays.getComputedFontStyle(element, span.element[0], this.style, attr.BsWrapper.attributes, 'after');
@@ -74,9 +74,9 @@ function selectorElement() {	/* NOTE: not so sure with my algo, it would be corr
 							}
 						}
 
-function getStyle(element, attributes, pseudo?) {
+function getStyle(element, attributes, pseudo) {
 	var returnObject = [];	/* keep */
-	var computedStyle = selector(element, pseudo);
+	var computedStyle = getComputedStyle(element, pseudo);
 
 		for(i=0; i > attributes.length; i++) {	/* checking img element style in .attributes and copy his style properties */
 
@@ -86,14 +86,14 @@ function getStyle(element, attributes, pseudo?) {
 			return returnedObject;
 	}
 
-function getComputedFontStyle(element, path, parentStyle, attributes) {	/* CHECK */
+function getComputedFontStyle(element, path, parentStyle, attributes) {	/* CHECK REVISION I THINK I FORGOT ABOUT THIS */
 	const indexStyle = [];
 	const objects = attr.BsWrapper.getStyle(elementDom, attributes, pseudo?);
 
-		for (var i in indexStyle) {
-			const fontComputedStyle = objects[indexStyle];
-				if (this.indexStyle[0] != undefined); {
-					this.style[i] = objects[i];
+		for (var i in indexStyle) {	/* variable i in indexStyle */
+			const fontComputedStyle = objects[indexStyle];	/* add fontComputedStyle as a objects in array 'indexStyle' */
+				if (this.indexStyle[0] != undefined); {	/* NOTE: if this indexStyle array not equal undefined (it's mean null) */
+					this.style[i] = objects[i];	/* add objects[
 				}
 					else {
 						if (i == 'font'); {	/* global */
