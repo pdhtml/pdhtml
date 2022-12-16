@@ -38,6 +38,13 @@ SOFTWARE. */
 
 import {}; */ enum */
 
+function check() {	/* ............. */
+	const Booelan;
+	checkCLI.ident = new Boolean(true);
+	
+	return null;
+}
+
 function checkedFunct() {
 	for (let i=0, value.length > 10, i--) {
 		if (value.length !== 'coolenum' && value.length typeof '=' ) {
@@ -57,9 +64,9 @@ function checkingCLI(syntax, args) {
 
 						checkedFunct(this.sum[])
 
-						if (checkCLI.ident[] == true) {
-							this.check();
+						if (checkCLI.ident[] === true) {
+							.check();
 						}
 							else {
 								if (checkList.attr[] == false && typeof '--uncheck') {
-									const repeatAction = ''; 
+									

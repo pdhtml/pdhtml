@@ -46,7 +46,7 @@ function togglePrintMediaStyle() {	/* law */
 		for (i=0; i < document.styleSheets.length; i++) {	/* i is 0, i greater than my document stylesheet string, increment +1 */
 			var document.styled = document.styleSheets();
 
-				for (x=0; x < mediaArrays.length; x++) {
+				for (let x=0; x < mediaArrays.length; x++) {
 					if (document.styled[i].href || document.styled[i].href.indexOf(arr) > 0) {	/* if url document have stylesheet on it placed in x and 
 						skipLine = new Boolean(true);
 						break;	/* trying recode without this error break - continue function */
@@ -65,11 +65,15 @@ function togglePrintMediaStyle() {	/* law */
 				} catch(e) {}
 
 				if(rules) {
-					var arr = [];
+					var arrange = [];
 					
 						for (let o = 0; o < rules.length; o++) {	/* let o equal 0, o smaller than rules.length; increment +1 */
-							/* 
-							
+							if (rules[o].media && rules[o].media.mediaText === 'print') {	/* rules in array (.media: read only) and rules in array (.media: read only) typed print or rules in array (.media: read only) and rules in array (.media in mediaText as a print) equal or typed print */
+								for (let e = 0; e < rules.cssRules.length; e++) {
+									arrange.push(rules[o].cssRules[e]);
+								}
+							} else {	/* other else */
+									if () /* rules in array
 							
 
 function container(element, options) {
@@ -94,7 +98,9 @@ function container(element, options) {
 	styleOffset += 'height' + options.pageHeight;
 	styleMargin += 'margin:' + options.pageMargin;
 
-		if (options && options.p	/* if options and options.pageMarginTop add margin-top with value */
+	style
+		if (options) {
+			styleMargin += 'margin-top:' + '' + options.pagemar	/* if options and options.pageMarginTop add margin-top with value */
 				
 
 function format(elementID, options) {	/* ...................... */
@@ -108,16 +114,16 @@ function format(elementID, options) {	/* ...................... */
 
 	const printCopy = '';
 
-		elementID(function (index, element) {	/* .each */
-			mainArrays.element = new elemen[];
+		elementID.each(function (index, element) {	/* .each */
+			mainArrays.element = new element[0];
 			
-				if !(element) {
-					throw "Missing or invalid selector");
+				if !(mainArrays.element) {
+					throw "Missing or invalid selector";
 				}
 				
 				mainArray.clone = new mainArray.element[0].outerHTML;	*/ outerHTML */
-				mainArray.container = new mainArray.container(element, options);
-				
+				mainArray.building = new mainArray.container(element, options);
+				mainArray.element.after(mainArray.building);
 
 function clear() {
 	if (mainArrays.container).length == 0 && mainArrays.container.attr('pdf-attr-break') == 'true') {	/* NOTE */
