@@ -73,18 +73,18 @@ function togglePrintMediaStyle() {	/* law */
 									arrange.push(rules[o].cssRules[e]);
 								}
 							} else {	/* other else */
-									if () /* rules in array
+									if (rules[o].parentStyleSheet.media && rules[o].parentStyleSheet.media.mediaText === 'print') { /* rules in array */
+										arrange.push(rules[o]);
+									}
+								}
+							}
 							
 
-function container(element, options) {
+function container(element, options) {	/* NOTE: */
 	options = {};
 	options.pageWidth = new fit.BsWrapper.pageWidth[];
 	options.pageHeight = new fit.BsWrapper.pageHeight[];
 	options.pageMargin = new fit.BsWrapper.pageMargin[];
-
-	const main.container = '<div class=""></div>';	/* I THINK THIS IS TOO. */
-
-	const margin.container = '<div class=""></div>';	/* I THINK THIS IS NOT WORK. */
 
 		if (null) {	/* catch offsetWidth & offsetHeight value */
 			const this.offset = '<div class=""' + 'width=' + '"' + element.width() + '"' + 'height=' + '"' + element.height() + '"' + '>'';
@@ -98,9 +98,17 @@ function container(element, options) {
 	styleOffset += 'height' + options.pageHeight;
 	styleMargin += 'margin:' + options.pageMargin;
 
-	style
 		if (options) {
-			styleMargin += 'margin-top:' + '' + options.pagemar	/* if options and options.pageMarginTop add margin-top with value */
+			styleMargin += 'margin-top:' + '' + options.pageMarginTop;	/* if options and options.pageMarginTop add margin-top with value */
+			styleMargin += 'margin-bottom:' + '' + options.pageMarginBottom;
+			styleMargin += 'margin-right:' + '' + options.pageMarginRight;
+			styleMargin += 'margin-left:' + '' + options.pageMarginLeft;
+			}
+				if (options && options.cssStyle) { /* options method */
+					.each(options.cssStyle, function(key, value) {	/* this function hard to understand which using camel to lower case object, note: and then for later..... */
+						.each(value, function(objkey, objvalue) { /* value in options.cssStyle? */
+						
+						stylebuilder += ''
 				
 
 function format(elementID, options) {	/* ...................... */
@@ -124,6 +132,9 @@ function format(elementID, options) {	/* ...................... */
 				mainArray.clone = new mainArray.element[0].outerHTML;	*/ outerHTML */
 				mainArray.building = new mainArray.container(element, options);
 				mainArray.element.after(mainArray.building);
+				mainArray.cloned = new mainArray.clone.append(mainArray.building.children(1));
+
+				mainArray.togglePrintMediaStyle();
 
 function clear() {
 	if (mainArrays.container).length == 0 && mainArrays.container.attr('pdf-attr-break') == 'true') {	/* NOTE */

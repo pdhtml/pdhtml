@@ -27,8 +27,8 @@ SOFTWARE. */
 var getStyle, getComputedFontStyle, getBasePath;
 var selectorElement;
 
-function selectorElement() {	/* NOTE: not so sure with my algo, it would be corrected in the end */
-	this.find('*').each(function (index) {
+function selectorElement(path) {	/* NOTE: not so sure with my algo, it would be corrected in the end */
+	this.find('*').each(function (index) { /* jquery .each function let's check this later... I learn this stuff mixed with jquery and fundamental javascript which I'm chasing money too it.. can I do it? IDK */
 		
 		const element = this;
 		const selectAfter = getComputedStyle(element, ':after');
