@@ -21,14 +21,21 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
 
-/* mime type arrays */
-mimeArrays.type: { pdf: 'application/pdf' }
 
-/* ... */
+mimeArrays.type: { pdf: 'application/pdf' }
 current.mimeType = "application/pdf";
 
 var mimeArrays = [];
-var togglePrintMediaStyle;
+var flatten, togglePrintMediaStyle;
+
+import { * } from "./migrating.js";
+
+
+function flatten (element, options) {
+	.getComputedFontStyle(element, element, undefined);
+
+	element.find('*').each(function (index, this)	{/* .find and .each */
+		switch(this)
 
 function togglePrintMediaStyle() {	/* law */
 	const containerExec = '<head>';	/* head container :NOTE */
@@ -77,8 +84,7 @@ function togglePrintMediaStyle() {	/* law */
 										arrange.push(rules[o]);
 									}
 								}
-							}
-							
+							}							
 
 function container(element, options) {	/* NOTE: */
 	options = {};
@@ -108,7 +114,20 @@ function container(element, options) {	/* NOTE: */
 					.each(options.cssStyle, function(key, value) {	/* this function hard to understand which using camel to lower case object, note: and then for later..... */
 						.each(value, function(objkey, objvalue) { /* value in options.cssStyle? */
 						
-						stylebuilder += ''
+						styleOffset += objkey.fromCamel() + ':' + '' + objvalue;
+						});
+					});
+				}
+				if (options && options.foStyle) {
+					.each(options.fostyle, function(key, value) {
+						.each(value, function(objkey, objvalue) {
+							styledOffset = new styleOffset;
+						styledOffset += objkey.fromCamel() + ':' + '' + objvalue;
+						});
+					});
+				}
+
+				const container = /* jquery('<div class=\'container-name\'></div>') what is this \' */
 				
 
 function format(elementID, options) {	/* ...................... */
@@ -134,12 +153,12 @@ function format(elementID, options) {	/* ...................... */
 				mainArray.element.after(mainArray.building);
 				mainArray.cloned = new mainArray.clone.append(mainArray.building.children(1));
 
-				mainArray.togglePrintMediaStyle();
+				.togglePrintMediaStyle();
 
 function clear() {
 	if (mainArrays.container).length == 0 && mainArrays.container.attr('pdf-attr-break') == 'true') {	/* NOTE */
 		removeAttr = new mainArrays.container.remove();	/* .container uplugged in mainArrays */
 	}
 		return removeAttr;
-		mainArrays.togglePrintMediaStyle();
+		.togglePrintMediaStyle();
 }
