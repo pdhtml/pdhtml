@@ -1,7 +1,7 @@
 /*
 MIT License
 
-Copyright (c) 2022 - 2023 [pdhtml - [pdhtml@pdhtml.com]]
+Copyright (c) 2022 [pdhtml - [pdhtml@pdhtml.com]]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -31,30 +31,29 @@ var flatten, togglePrintMediaStyle;
 import { * } from "./migrating.js";
 
 
-function flatten (element, options) {
-	.getComputedFontStyle(element, element, undefined);
+function flatten (element: any, options: any) {
+	.getComputedFontStyle(element, element, undefined);	/* mainArray. */
 
 	element.find('*').each(function (index, this)	{/* .find and .each */
 		switch(this)
 
-function togglePrintMediaStyle() {	/* law */
+function togglePrintMediaStyle() {	/* ..... */
 	const containerExec = '<head>';	/* head container :NOTE */
 	const lineExec = 'pdf-attr-page';
 
-		if (lineExec.length > 0) {
-			getLineExec = new lineExec.remove();
+		if (lineExec.length > 0) { /* if pdf-attr-page.length greater than 0 */
+			getLineExec = new lineExec.remove();	/* new lineExec .remove() as a getLineExec */
 
-			return lineExec;
+			return lineExec;	/* return pdf-attr-page */
 		}
 
-	const printRules = [];
+	const printRules = [];	/* Array */
 	const boolean = false;
 
-		for (i=0; i < document.styleSheets.length; i++) {	/* i is 0, i greater than my document stylesheet string, increment +1 */
-			var document.styled = document.styleSheets();
+		for (let i=0; i < document.styleSheets.length; i++) {	/* i is 0, i smaller than my document.styleSheets.length string, increment +1 */
 
-				for (let x=0; x < mediaArrays.length; x++) {
-					if (document.styled[i].href || document.styled[i].href.indexOf(arr) > 0) {	/* if url document have stylesheet on it placed in x and 
+				for (let x=0; x < .......; x++) { /* xeponline.MEDIA_IGNORE */
+					if (document.styleSheets[i].href || document.styleSheets[i].href.indexOf() > 0) {	/* if url document have stylesheet on it placed in x and 
 						skipLine = new Boolean(true);
 						break;	/* trying recode without this error break - continue function */
 					}
@@ -65,8 +64,8 @@ function togglePrintMediaStyle() {	/* law */
 						document stylesheet in href not equal and type '' null and document stylesheet in
 							array i as a host, indexed ????  -- document version*/
 				try {
-					if (document.styleSheets[i].cssRules !== null || document.styleSheets[i].href && document.styleSheets[i].indexOf(href(window.location.host) !== null) {
-						skipLine();
+					if (document.styleSheets[i].cssRules !== null || document.styleSheets[i].href && document.styleSheets[i].indexOf(href(window.location.host) !== null) { /* document.styleSheets[i].indexOf(href(window.location.host) wrong */
+						skipLine = boolean(true); /* skipLine Object */
 					}
 						if (skipLine) continue { const rules = document.styleSheets[i].cssRules }
 				} catch(e) {}
@@ -87,16 +86,17 @@ function togglePrintMediaStyle() {	/* law */
 							}							
 
 function container(element, options) {	/* NOTE: */
-	options = {};
+	options = {};	/* const car = { make: 'Honda', model: 'Accord', year: 1998 }; example */
 	options.pageWidth = new fit.BsWrapper.pageWidth[];
 	options.pageHeight = new fit.BsWrapper.pageHeight[];
 	options.pageMargin = new fit.BsWrapper.pageMargin[];
 
-		if (null) {	/* catch offsetWidth & offsetHeight value */
+	/*	if (null) {	/* not catch */
 			const this.offset = '<div class=""' + 'width=' + '"' + element.width() + '"' + 'height=' + '"' + element.height() + '"' + '>'';
 		}
 			return null;
-	
+	*/
+
 	const styleOffset = '';
 	const styleMargin = '';
 
@@ -104,8 +104,8 @@ function container(element, options) {	/* NOTE: */
 	styleOffset += 'height' + options.pageHeight;
 	styleMargin += 'margin:' + options.pageMargin;
 
-		if (options) {
-			styleMargin += 'margin-top:' + '' + options.pageMarginTop;	/* if options and options.pageMarginTop add margin-top with value */
+		if (options) {	/* if options '{ margin-top: 'value', margin-bottom: 'value', etc... } */
+			styleMargin += 'margin-top:' + '' + options.pageMarginTop;	/* if options and options.pageMarginTop add margin-top with value, object options not exist */
 			styleMargin += 'margin-bottom:' + '' + options.pageMarginBottom;
 			styleMargin += 'margin-right:' + '' + options.pageMarginRight;
 			styleMargin += 'margin-left:' + '' + options.pageMarginLeft;
@@ -118,7 +118,7 @@ function container(element, options) {	/* NOTE: */
 						});
 					});
 				}
-				if (options && options.foStyle) {
+				if (options && options.foStyle) { /* NOTEEEE: .foStyle not exist sounds foolish, it's mean if options, syntax */
 					.each(options.fostyle, function(key, value) {
 						.each(value, function(objkey, objvalue) {
 							styledOffset = new styleOffset;
@@ -128,7 +128,6 @@ function container(element, options) {	/* NOTE: */
 				}
 
 				const container = /* jquery('<div class=\'container-name\'></div>') what is this \' */
-				
 
 function format(elementID, options) {	/* ...................... */
 	options = options || {};	/* [object Object] */

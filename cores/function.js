@@ -1,7 +1,7 @@
 /*
 MIT License
 
-Copyright (c) 2022 - 2023 [pdhtml - [pdhtml@pdhtml.com]]
+Copyright (c) 2022 [pdhtml - [pdhtml@pdhtml.com]]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,11 +25,11 @@ SOFTWARE. */
 var utf8EncodeBuffer, utf8EncodeBinaryString, binaryStringEncodeBuffer;
 
 /* Code to encode bufferToBinarystring to ....	*/
-function bufferEncodeBinary(buffer, path) {
-	const char = utf8EncodeBuffer();
+function bufferEncodeBinary(buffer) {	/* buffer = 
+	const char = utf8EncodeBuffer();	/* char as a utf8EncodeBuffer funct */
 	const binary = Array.prototype.map.call(buffer, function (char) {	/*
 
-		return String.fromCharCode(char);	/*
+		return String.fromCharCode(char);	/* .join nothing */
 	}).join('');
 
 	return binary;
@@ -43,14 +43,14 @@ function utf8EncodeBuffer(str) {
 	return buffer;
 }
 
-/* Code to encode utf8EncodeBinaryString to .... using .... */
+/*NOTEEEEE: Code to encode utf8EncodeBinaryString to .... using .... */
 var reGex = '';
 
-function utf8EncodeBinaryString(utf8Str) {
-	const escString = encodeURIComponent(uriString);
-	const binaryEsc = escString.replace(reGex, function (escString) {	*/ replacing specific string with regex */
+function utf8EncodeBinaryString() { /* NOTEEEEE: blank function */
+	const escString = encodeURIComponent(utf8Str);	/* uriString? str */
+	const binaryEsc = this.replace(reGex, function (escString) {	*/ replacing specific string with regex */
 
-		return String.fromCharCode('0x');
+		return String.fromCharCode('0x', escString); /* '[space]' + escString */
 	});
 
 	return binaryEsc;
